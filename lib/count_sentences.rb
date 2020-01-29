@@ -23,9 +23,13 @@ class String
 #       end
 #       counter
 #   end
+
+
+# def count_sentences
+#   self.scan(/[^\.!?]+[\.!?]/).count
 # end
 
 def count_sentences
-  self.scan(/[^\.!?]+[\.!?]/).count
+  self.string.split(/[?!.]\s+[A-Z]/).length
 end
 end
